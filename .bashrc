@@ -1,15 +1,15 @@
+# Aliases
+alias vim="/Applications/MacVim.app/Contents/bin/mvim"
+
+[[ -f "$HOME/.bash_prompt" ]] && . "$HOME/.bash_prompt"  # Load bash prompt style
+[[ -f "$HOME/.git-completion.bash" ]] && . "$HOME/.git-completion.bash" # Load git autocomplete
+
 # Initialize
 cd ~/Developer
 PROMPT_COMMAND="tab_title ; $PROMPT_COMMAND"
 function tab_title {
   echo -n -e "\033]0;${PWD##*/}\007"
 }
-
-# Aliases
-alias vim="/Applications/MacVim.app/Contents/bin/mvim"
-
-[[ -f "$HOME/.bash_prompt" ]] && . "$HOME/.bash_prompt"  # Load bash prompt style
-[[ -f "$HOME/.git-completion.bash" ]] && . "$HOME/.git-completion.bash" # Load git autocomplete
 
 # Postgres.app
 export PGSQL_HOME=/Applications/Postgres.app/Contents/Versions/11
