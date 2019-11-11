@@ -1,6 +1,12 @@
+syntax on
+
 " Color scheme and typeface
-colorscheme slate
+colorscheme koehler
 set guifont=SF\ Mono\ Semibold:h12
+
+set number
+set mouse=a
+set autoread
 
 " Stop creating .swp files!
 set nobackup
