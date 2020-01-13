@@ -33,9 +33,9 @@ build_prompt()
   check_success
   gitBranch=$(parse_git_branch)
   if [ "$gitBranch" == " [(no branch)]" ]; then
-    export PS1="\n($HIST_COLOR\!$WHITE) $CYAN\t $DARKMOON $MAUVE\u$BLACK $BLUE\w$YELLOW\$(parse_git_description)$BLACK\n\$ "
+    export PS1="\n($HIST_COLOR\!$WHITE) $CYAN\t $FIRE $MAUVE\u$BLACK $BLUE\w$YELLOW\$(parse_git_description)$BLACK\n\$ "
   else
-    export PS1="\n($HIST_COLOR\!$WHITE) $CYAN\t $DARKMOON $MAUVE\u$BLACK $BLUE\w$YELLOW\$(parse_git_branch)$BLACK\n\$ "
+    export PS1="\n($HIST_COLOR\!$WHITE) $CYAN\t $FIRE $MAUVE\u$BLACK $BLUE\w$YELLOW\$(parse_git_branch)$BLACK\n\$ "
   fi
 }
 
